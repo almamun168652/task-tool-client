@@ -1,5 +1,7 @@
 const ManageTaskCard = ({ data }) => {
+
   const { title, description, category } = data || {};
+  
   return (
     <div>
       <div className="flex flex-col min-h-full cursor-move">

@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 // import DashboardMenu from "./DashboardMenu/DashboardMenu";
 import { FaCircleUser } from "react-icons/fa6";
-import logo from "../../assets/logo-pv.png";
+// import logo from "../../assets/logo-pv.png";
 
 const Dashboard = () => {
   const { user, logOut } = useContext(AuthContext);
