@@ -21,7 +21,7 @@ const TaskCard = ({ data }) => {
       if (result.isConfirmed) {
         axios
           .delete(
-            `http://localhost:5000/api/v1/${_id}/delete-task`
+            `https://task-tool-server.vercel.app/api/v1/${_id}/delete-task`
           )
           .then((res) => {
             if (res.data.deletedCount > 0) {

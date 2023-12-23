@@ -11,7 +11,7 @@ const useCreateTask = () => {
     queryKey: ["tasks", userEmail],
     queryFn: async () => {
       const result = await axios.get(
-        `http://localhost:5000/api/v1/show-all-task?userEmail=${userEmail}`
+        `https://task-tool-server.vercel.app/api/v1/show-all-task?userEmail=${userEmail}`
       );
       return result.data;
     },

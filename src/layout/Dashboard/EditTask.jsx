@@ -35,7 +35,7 @@ const EditTask = () => {
       if (result.isConfirmed) {
         axios
           .patch(
-            `http://localhost:5000/api/v1/${_id}/edit-task`,
+            `https://task-tool-server.vercel.app/api/v1/${_id}/edit-task`,
             editTask
           )
           .then((res) => {
